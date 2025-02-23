@@ -48,7 +48,7 @@ $hypersetup.latex()$
 \usepackage{fancyhdr,lastpage}
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[C]{\textsc{Spring 2025}}
+% \fancyhead[C]{\textsc{Spring 2025}}
 \fancyfoot[C]{[~\thepage~/~\pageref{LastPage}~]}
 %
 \usepackage[ruled,vlined,linesnumbered]{algorithm2e}

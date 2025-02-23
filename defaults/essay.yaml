@@ -1,0 +1,17 @@
+metadata:
+  documentclass: article
+  pagestyle: plain
+
+  numbersections: false
+  indent: true
+  colorlinks: false
+  toc: false
+
+  fontsize: 12pt
+  linestretch: 1.45
+  fontfamily: bookman
+
+  margin-left: 1.65in
+  margin-right: 1.65in
+  margin-top: 1.25in
+  margin-bottom: 1.25in
