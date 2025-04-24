@@ -1,10 +1,5 @@
 $passoptions.latex()$
 \documentclass[
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% md addition
-leqno,
-% md addition end
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 $if(fontsize)$
   $fontsize$,
 $endif$
@@ -44,11 +39,15 @@ $hypersetup.latex()$
 \usepackage[all]{nowidow}
 \usepackage{gensymb}
 \usepackage{blkarray}
+\usepackage{graphicx}
 %
 \usepackage{fancyhdr,lastpage}
 \pagestyle{fancy}
 \fancyhf{}
-% \fancyhead[C]{\textsc{Spring 2025}}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead[R]{\textsc{$header.right$}}
+\fancyhead[L]{\textsc{$header.left$}}
+\fancyhead[C]{\textsc{$header.center$}}
 \fancyfoot[C]{[~\thepage~/~\pageref{LastPage}~]}
 %
 \usepackage[ruled,vlined,linesnumbered]{algorithm2e}
@@ -60,11 +59,15 @@ $hypersetup.latex()$
 \newcommand{\con}{\vspace*{\fill}(Question continued on next page).\newpage}
 \newcommand{\ssum}{\textstyle\sum}
 \newcommand{\todo}[1]{{\color{red}#1}}
-\renewcommand{\u}[1]{\mathrm{~\left[#1\right]}}
+\renewcommand{\u}[1]{\mathrm{\,\left[#1\right]}}
 \newcommand{\e}[1]{\times 10^{#1}}
 \renewcommand{\parallel}{\mathbin{\|}}
+\renewcommand{\d}{\mathrm{d}}
+\newcommand{\phasor}[2]{#1\,\angle\,#2\degree}
+\newcommand{\aln}[1]{\begin{alignat*}{3}#1\end{alignat*}}
+\newcommand{\lap}[1]{\mathcal{L}\{#1\}}
 %
-\AtBeginEnvironment{alignat}{\setcounter{equation}{-1}}
+% \AtBeginEnvironment{alignat}{\setcounter{equation}{-1}}
 %
 \usepackage[edges]{forest}
 \forestset{default/.style = {for tree = {draw,rectangle}}}
@@ -106,8 +109,8 @@ $endif$
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % md addition
-\thispagestyle{empty}
-\newpage
+% \thispagestyle{empty}
+% \newpage
 % md addition end
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
