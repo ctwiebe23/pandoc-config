@@ -48,7 +48,8 @@ $hypersetup.latex()$
 \fancyhead[R]{\textsc{$header.right$}}
 \fancyhead[L]{\textsc{$header.left$}}
 \fancyhead[C]{\textsc{$header.center$}}
-\fancyfoot[C]{[~\thepage~/~\pageref{LastPage}~]}
+\fancyfoot[C]{[~\thepage~]}
+% \fancyfoot[C]{[~\thepage~/~\pageref{LastPage}~]}
 %
 \usepackage[ruled,vlined,linesnumbered]{algorithm2e}
 \DontPrintSemicolon
@@ -66,6 +67,10 @@ $hypersetup.latex()$
 \newcommand{\phasor}[2]{#1\,\angle\,#2\degree}
 \newcommand{\aln}[1]{\begin{alignat*}{3}#1\end{alignat*}}
 \newcommand{\lap}[1]{\mathcal{L}\{#1\}}
+\newcommand{\lapi}[1]{\mathcal{L}^{-1}\{#1\}}
+\newcommand{\fur}[1]{\mathcal{F}\{#1\}}
+\newcommand{\furi}[1]{\mathcal{F}^{-1}\{#1\}}
+\newcommand{\where}{\quad\quad}
 %
 % \AtBeginEnvironment{alignat}{\setcounter{equation}{-1}}
 %
@@ -109,8 +114,10 @@ $endif$
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % md addition
-% \thispagestyle{empty}
-% \newpage
+$if(toc-on-own-page)$
+\thispagestyle{empty}
+\newpage
+$endif$
 % md addition end
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
