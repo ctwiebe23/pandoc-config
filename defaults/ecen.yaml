@@ -8,8 +8,9 @@ metadata:
   colorlinks: false
   toc: true
 
-  fontsize: 12pt
+  fontsize: 11pt
   linestretch: 1.3
+  fontfamily: palatino
 
   margin-left: 1.5in
   margin-right: 1.5in
