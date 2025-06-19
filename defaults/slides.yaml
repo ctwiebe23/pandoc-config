@@ -1,0 +1,8 @@
+metadata:
+  theme: Boadilla
+  fontfamily: bookman
+  aspectratio: 169
+  innertheme: rectangles
+  urlcolor: blue
+  # header-includes:
+  # - \setbeamertemplate{itemize items}{$\cdot$}

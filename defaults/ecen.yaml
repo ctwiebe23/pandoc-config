@@ -1,3 +1,9 @@
+input-file: report.md
+output-file: out.pdf
+standalone: true
+
+highlight-style: tango
+
 metadata:
   author: Carston Wiebe
 
