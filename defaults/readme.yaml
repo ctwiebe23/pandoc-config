@@ -1,0 +1,4 @@
+embed-resources: true
+toc: true
+metadata:
+  css: /home/mozzie/.local/share/pandoc/resources/readme.css
