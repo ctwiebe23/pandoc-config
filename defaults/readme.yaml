@@ -1,4 +1,5 @@
 embed-resources: true
 toc: true
+include-in-header: /home/mozzie/.local/share/pandoc/resources/readme.fonts.html
 metadata:
   css: /home/mozzie/.local/share/pandoc/resources/readme.css

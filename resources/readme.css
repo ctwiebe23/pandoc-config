@@ -10,9 +10,10 @@
   --md:16px;
   --lg:32px;
   --indent:3ch;
-  --font-size:13pt;
-  --font-family:sans-serif;
-  --mono-family:monospace;
+  --font-size:14pt;
+  --tracking:0.15rem;
+  --font-family:"Outfit", sans-serif;
+  --mono-family:"DM Mono", monospace;
   --fg:light-dark(#3f3333, #ddddf0);
   --bg:light-dark(#fff7dd, #222230);
   --link:light-dark(#4455cc, #7788ff);
@@ -39,13 +40,13 @@ h1:not(.title) {
   font-size:1.5rem;
   font-weight:bold;
   margin-top:var(--lg);
-  letter-spacing:0.05rem;
+  letter-spacing:var(--tracking);
 }
 
 h2 {
   font-size: 1.1rem;
   font-weight:bold;
-  letter-spacing:0.05rem;
+  letter-spacing:var(--tracking);
   margin-top:var(--lg);
 }
 
@@ -118,4 +119,8 @@ a {
 
 a:hover {
   text-decoration:underline var(--rule) solid currentcolor;
+}
+
+code {
+  font-family:var(--mono-family);
 }
