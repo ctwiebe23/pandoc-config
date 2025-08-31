@@ -41,6 +41,7 @@ h1:not(.title) {
   font-weight:bold;
   margin-top:var(--lg);
   letter-spacing:var(--tracking);
+  text-transform:uppercase;
 }
 
 h2 {
@@ -48,6 +49,15 @@ h2 {
   font-weight:bold;
   letter-spacing:var(--tracking);
   margin-top:var(--lg);
+  text-transform:uppercase;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight:normal;
+  letter-spacing:var(--tracking);
+  margin-top:var(--md);
+  text-transform:uppercase;
 }
 
 dt {
