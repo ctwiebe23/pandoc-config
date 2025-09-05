@@ -14,9 +14,9 @@
   --tracking:0.15rem;
   --font-family:"Outfit", sans-serif;
   --mono-family:"DM Mono", monospace;
-  --fg:light-dark(#3f3333, #ddddf0);
-  --bg:light-dark(#fff7dd, #222230);
-  --link:light-dark(#4455cc, #7788ff);
+  --fg:light-dark(#292222, #e0e0e8);
+  --bg:light-dark(#fff, #1c1c1f);
+  --link:light-dark(#c25, #69f);
 
   font:var(--font-size) / 1.5 var(--font-family);
   hyphens:auto;
