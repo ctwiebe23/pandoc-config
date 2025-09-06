@@ -114,8 +114,8 @@ $endif$
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % md addition
-$if(toc-on-own-page)$
 \thispagestyle{empty}
+$if(toc-on-own-page)$
 \newpage
 $endif$
 % md addition end
