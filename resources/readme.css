@@ -74,6 +74,20 @@ ol, ul {
   margin-left:var(--indent);
 }
 
+p {
+  margin-block:var(--md);
+}
+
+@media (width > 700px) {
+  p {
+    text-align:justify;
+  }
+}
+
+p.subtitle {
+  margin:0;
+}
+
 p.author, p.date {
   display:inline;
 }
@@ -84,16 +98,6 @@ p.author::before {
 
 p.date::before {
   content:'on ';
-}
-
-p {
-  margin-block:var(--md);
-}
-
-@media (width > 700px) {
-  p {
-    text-align:justify;
-  }
 }
 
 hr {
