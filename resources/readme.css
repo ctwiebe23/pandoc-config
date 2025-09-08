@@ -17,6 +17,8 @@
   --fg:light-dark(#292222, #e0e0e8);
   --bg:light-dark(#fff, #1c1c1f);
   --link:light-dark(#c25, #69f);
+  --code-fg:light-dark(#292222, #1c1c1f);
+  --code-bg:light-dark(#e0e0e8, #e0e0e8);
 
   font:var(--font-size) / 1.5 var(--font-family);
   hyphens:auto;
@@ -104,10 +106,15 @@ hr {
   margin-block:var(--lg);
 }
 
+code {
+  font-family:var(--mono-family);
+}
+
 pre > code {
   display:block;
-  color:var(--bg);
-  background:var(--fg);
+  color:var(--code-fg);
+  background:var(--code-bg);
+  border-radius:0.5rem;
   padding:var(--md);
   margin-block:var(--md);
   white-space:pre;
@@ -133,8 +140,4 @@ a {
 
 a:hover {
   text-decoration:underline var(--rule) solid currentcolor;
-}
-
-code {
-  font-family:var(--mono-family);
 }
