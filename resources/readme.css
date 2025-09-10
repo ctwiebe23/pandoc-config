@@ -39,9 +39,11 @@ h1.title {
 }
 
 h1:not(.title) {
+  border-top:var(--rule) solid var(--fg);
   font-size:1.5rem;
   font-weight:bold;
   margin-top:var(--lg);
+  padding-top:var(--sm);
   letter-spacing:var(--tracking);
   text-transform:uppercase;
 }
@@ -76,7 +78,7 @@ ol, ul {
   margin-left:var(--indent);
 }
 
-p {
+:is(h1, h2, h3, h4, h6, p, ol, ul, dl, pre) + :is(p, ol, ul, dl, pre) {
   margin-block:var(--md);
 }
 
