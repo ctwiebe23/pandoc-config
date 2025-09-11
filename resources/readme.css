@@ -16,6 +16,8 @@
   --mono-family:"DM Mono", monospace;
   --fg:light-dark(#292222, #e0e0e8);
   --bg:light-dark(#fff, #1c1c1f);
+  --fg2:light-dark(#292222, #e0e0e8);
+  --bg2:light-dark(#fde, #444460);
   --link:light-dark(#c25, #69f);
   --code-fg:light-dark(#292222, #1c1c1f);
   --code-bg:light-dark(#e0e0e8, #e0e0e8);
@@ -39,11 +41,9 @@ h1.title {
 }
 
 h1:not(.title) {
-  border-top:var(--rule) solid var(--fg);
   font-size:1.5rem;
   font-weight:bold;
   margin-top:var(--lg);
-  padding-top:var(--sm);
   letter-spacing:var(--tracking);
   text-transform:uppercase;
 }
@@ -123,6 +123,28 @@ pre > code {
   overflow:auto;
 }
 
+a {
+  color:var(--link);
+  text-decoration:none;
+}
+
+a:hover {
+  text-decoration:underline var(--rule) solid currentcolor;
+  position:relative;
+}
+
+a:hover::after {
+  position:absolute;
+  left:0;
+  top:1.3rem;
+  background:var(--bg2);
+  border-radius:0.5rem;
+  color:var(--fg);
+  content:attr(href);
+  padding:4px 8px;
+  white-space:nowrap;
+}
+
 nav#TOC {
   margin-block:var(--lg);
 }
@@ -135,11 +157,6 @@ nav#TOC a {
   text-transform:lowercase;
 }
 
-a {
-  color:var(--link);
-  text-decoration:none;
-}
-
-a:hover {
-  text-decoration:underline var(--rule) solid currentcolor;
+nav#TOC a:hover::after {
+  content:none;
 }
