@@ -1,0 +1,22 @@
+standalone: true
+highlight-style: tango
+
+metadata:
+  documentclass: scrartcl
+
+  numbersections: true
+  indent: false
+  colorlinks: true
+  toc: true
+
+  fontsize: 11pt
+  linestretch: 1.3
+  fontfamily: palatino
+
+  margin-left: 1.5in
+  margin-right: 1.5in
+  margin-top: 1in
+  margin-bottom: 1.2in
+
+  header:
+    right: University of Nebraska–Lincoln
