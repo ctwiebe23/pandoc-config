@@ -71,6 +71,8 @@ $hypersetup.latex()$
 \newcommand{\fur}[1]{\mathcal{F}\{#1\}}
 \newcommand{\furi}[1]{\mathcal{F}^{-1}\{#1\}}
 \newcommand{\where}{\quad\quad}
+\newcommand{\peak}[1]{\widehat{#1}}
+\newcommand{\avg}[1]{\overline{#1}}
 %
 % \AtBeginEnvironment{alignat}{\setcounter{equation}{-1}}
 %
