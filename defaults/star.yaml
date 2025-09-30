@@ -7,7 +7,6 @@ metadata:
   numbersections: true
   indent: false
   colorlinks: true
-  toc: true
 
   fontsize: 11pt
   linestretch: 1.3

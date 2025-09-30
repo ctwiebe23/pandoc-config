@@ -1,0 +1,4 @@
+embed-resources: true
+include-in-header: /home/mozzie/.local/share/pandoc/resources/microtalk.fonts.html
+metadata:
+  css: /home/mozzie/.local/share/pandoc/resources/microtalk.css
