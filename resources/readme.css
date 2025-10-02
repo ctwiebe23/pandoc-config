@@ -5,7 +5,7 @@
 }
 
 :root {
-  --rule:1px;
+  --rule:2px;
   --sm:8px;
   --md:16px;
   --lg:32px;
@@ -78,7 +78,7 @@ ol, ul {
   margin-left:var(--indent);
 }
 
-:is(h1, h2, h3, h4, h6, p, ol, ul, dl, pre) + :is(p, ol, ul, dl, pre) {
+:is(h1, h2, h3, h4, h6, p, ol, ul, dl, pre, blockquote) + :is(p, ol, ul, dl, pre, blockquote) {
   margin-block:var(--md);
 }
 
@@ -159,4 +159,9 @@ nav#TOC a {
 
 nav#TOC a:hover::after {
   content:none;
+}
+
+blockquote {
+  padding-left:var(--lg);
+  border-left:var(--rule) solid var(--fg);
 }
