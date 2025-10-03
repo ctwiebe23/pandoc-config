@@ -32,12 +32,13 @@ body {
   max-width:700px;
   min-height:100vh;
   padding:var(--md);
-  margin:var(--lg) auto;
+  margin:auto;
 }
 
 h1.title {
   font-size:2rem;
   font-weight:normal;
+  color:var(--link);
 }
 
 h1:not(.title) {
@@ -65,7 +66,6 @@ h3 {
 }
 
 dt {
-  margin-top:var(--md);
   font-family:var(--mono-family);
 }
 
@@ -91,27 +91,34 @@ ol, ul {
 header {
   border-block:var(--rule) solid var(--fg);
   padding-block:var(--md);
-  margin-top:var(--md);
-  margin-bottom:var(--lg);
+  margin-top:50vh;
+  margin-bottom:50vh;
+  transform:translateY(-50%);
   text-align:right;
 }
 
-p.subtitle {
-  margin:0;
+p.subtitle, p.author, p.date {
   text-align:right;
-}
-
-p.author, p.date {
+  color:var(--link);
   display:inline;
-  text-align:right;
+}
+
+p.subtitle, p.author, p.date {
+}
+
+p.subtitle::before {
+  content:'for ';
+  color:var(--fg);
 }
 
 p.author::before {
   content:'by ';
+  color:var(--fg);
 }
 
 p.date::before {
   content:'on ';
+  color:var(--fg);
 }
 
 hr {
