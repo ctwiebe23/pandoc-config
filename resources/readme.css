@@ -112,6 +112,11 @@ code {
   font-family:var(--mono-family);
 }
 
+pre:has(code) {
+  width:100%;
+  overflow:auto;
+}
+
 pre > code {
   display:block;
   color:var(--code-fg);
@@ -120,7 +125,7 @@ pre > code {
   padding:var(--md);
   margin-block:var(--md);
   white-space:pre;
-  overflow:auto;
+  min-width:fit-content;
 }
 
 a {
