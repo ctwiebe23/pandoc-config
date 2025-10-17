@@ -62,6 +62,7 @@ $hypersetup.latex()$
 \newcommand{\todo}[1]{{\color{red}#1}}
 \renewcommand{\u}[1]{\mathrm{\,\left[#1\right]}}
 \newcommand{\e}[1]{\times 10^{#1}}
+% \newcommand{\e}[1]{\,\mathrm{E}{#1}}
 \renewcommand{\parallel}{\mathbin{\|}}
 \renewcommand{\d}{\mathrm{d}}
 \newcommand{\phasor}[2]{#1\,\angle\,#2\degree}
