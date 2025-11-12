@@ -2,15 +2,18 @@ standalone: true
 highlight-style: tango
 
 metadata:
-  # documentclass: scrartcl
+  documentclass: scrartcl
 
   numbersections: true
   indent: false
   colorlinks: true
 
   fontsize: 11pt
-  linestretch: 1.3
-  fontfamily: tgschola
+  linestretch: 1.5
+  # fontfamily: tgschola
+  # fontfamily: bookman
+  # fontfamily: utopia
+  fontfamily: palatino
 
   margin-left: 1.5in
   margin-right: 1.5in
