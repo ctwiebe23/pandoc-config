@@ -59,6 +59,7 @@ $hypersetup.latex()$
 %
 \newcommand{\con}{\vspace*{\fill}(Question continued on next page).\newpage}
 \newcommand{\ssum}{\textstyle\sum}
+\newcommand{\pproduct}{\Pi\,}
 \newcommand{\todo}[1]{{\color{red}#1}}
 \renewcommand{\u}[1]{\mathrm{\,\left[#1\right]}}
 % \newcommand{\e}[1]{\times 10^{#1}}
@@ -67,6 +68,8 @@ $hypersetup.latex()$
 \renewcommand{\d}{\mathrm{d}}
 \newcommand{\phasor}[2]{#1\,\angle\,#2\degree}
 \newcommand{\aln}[1]{\begin{alignat*}{3}#1\end{alignat*}}
+\newcommand{\alnn}[1]{\begin{alignat}{3}#1\end{alignat}}
+\newcommand{\alt}{~~~~\,\,}
 \newcommand{\lap}[1]{\mathcal{L}\{#1\}}
 \newcommand{\lapi}[1]{\mathcal{L}^{-1}\{#1\}}
 \newcommand{\fur}[1]{\mathcal{F}\{#1\}}
@@ -74,6 +77,9 @@ $hypersetup.latex()$
 \newcommand{\where}{\quad\quad}
 \newcommand{\peak}[1]{\widehat{#1}}
 \newcommand{\avg}[1]{\overline{#1}}
+\newcommand{\ov}[1]{\overline{#1}}
+\newcommand{\n}[1]{\overline{#1}}
+\newcommand{\resetaln}{\setcounter{equation}{0}}
 %
 % \AtBeginEnvironment{alignat}{\setcounter{equation}{-1}}
 %
