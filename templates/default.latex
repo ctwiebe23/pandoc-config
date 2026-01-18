@@ -80,6 +80,7 @@ $hypersetup.latex()$
 \newcommand{\ov}[1]{\overline{#1}}
 \newcommand{\n}[1]{\overline{#1}}
 \newcommand{\resetaln}{\setcounter{equation}{0}}
+\newcommand{\set}[1]{\{#1\}}
 %
 % \AtBeginEnvironment{alignat}{\setcounter{equation}{-1}}
 %
