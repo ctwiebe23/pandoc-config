@@ -91,6 +91,18 @@ $hypersetup.latex()$
 \usetikzlibrary{positioning,arrows}
 \tikzset{>=stealth,node distance=3cm,vertex/.style={draw,circle,minimum
 size=8mm}}
+\lstset{
+  numbers=left,
+  numberblanklines=true,
+  numbersep=12pt,
+  frame=tblr,
+  framesep=6pt,
+  basicstyle=\scriptsize,
+  keywordstyle=\color{violet},
+  commentstyle=\color{gray}\itshape,
+  identifierstyle=,
+  stringstyle=\color{teal},
+}
 % md addition end
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
