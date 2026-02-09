@@ -10,6 +10,8 @@ metadata:
 
   documentclass: scrartcl
 
+  toc-on-own-page: true
+
   numbersections: true
   indent: false
   colorlinks: false
