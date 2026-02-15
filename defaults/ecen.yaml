@@ -1,4 +1,4 @@
-input-file: report.md
+# input-file: report.md
 output-file: out.pdf
 standalone: true
 listings: true
