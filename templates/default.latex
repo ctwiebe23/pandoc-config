@@ -131,8 +131,9 @@ $endif$
 $if(title)$
 \maketitle
 $if(abstract)$
+\vfill{}
 \begin{abstract}
-$abstract$
+  \textbf{Abstract:} $abstract$
 \end{abstract}
 $endif$
 $endif$
