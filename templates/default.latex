@@ -82,12 +82,11 @@ $hypersetup.latex()$
 \newcommand{\n}[1]{\overline{#1}}
 \newcommand{\resetaln}{\setcounter{equation}{0}}
 \newcommand{\set}[1]{\{#1\}}
-\newcommand{\vvv}[3]{\left\langle~ {#1},\, {#2},\, {#3} ~\right\rangle}
-\newcommand{\xyz}[3]{\hat x({#1}) + \hat y({#2}) + \hat z({#3})}
-\newcommand{\rpz}[3]{\hat r({#1}) + \hat \phi({#2}) + \hat z({#3})}
-\newcommand{\rpt}[3]{\hat R({#1}) + \hat \phi({#2}) + \hat \theta({#3})}
 \newcommand{\unit}[1]{\hat{\mathbf{#1}}}
 \newcommand{\thus}{\therefore~}
+\renewcommand{\dfrac}[2]{\frac{\d {#1}}{\d {#2}}}
+\newcommand{\pfrac}[2]{\frac{\partial {#1}}{\partial {#2}}}
+\newcommand{\ufrac}[2]{\u{\frac{#1}{#2}}}
 %
 % \AtBeginEnvironment{alignat}{\setcounter{equation}{-1}}
 %
