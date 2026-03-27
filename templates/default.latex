@@ -84,9 +84,11 @@ $hypersetup.latex()$
 \newcommand{\set}[1]{\{#1\}}
 \newcommand{\unit}[1]{\hat{\mathbf{#1}}}
 \newcommand{\thus}{\therefore~}
+\newcommand{\cause}{\because~}
 \renewcommand{\dfrac}[2]{\frac{\d {#1}}{\d {#2}}}
 \newcommand{\pfrac}[2]{\frac{\partial {#1}}{\partial {#2}}}
 \newcommand{\ufrac}[2]{\u{\frac{#1}{#2}}}
+\newcommand{\del}{\nabla}
 %
 % \AtBeginEnvironment{alignat}{\setcounter{equation}{-1}}
 %
