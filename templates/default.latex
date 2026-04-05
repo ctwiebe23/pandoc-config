@@ -1,5 +1,11 @@
 $passoptions.latex()$
 \documentclass[
+$for(babel-otherlangs)$
+  $babel-otherlangs$,
+$endfor$
+$if(babel-lang)$
+  $babel-lang$,
+$endif$
 $if(fontsize)$
   $fontsize$,
 $endif$
@@ -27,6 +33,7 @@ $else$
 \setcounter{secnumdepth}{-\maxdimen} % remove section numbering
 $endif$
 $fonts.latex()$
+$font-settings.latex()$
 $common.latex()$
 $for(header-includes)$
 $header-includes$
@@ -40,6 +47,7 @@ $hypersetup.latex()$
 \usepackage{gensymb}
 \usepackage{blkarray}
 \usepackage{graphicx}
+\usepackage{listings}
 %
 \usepackage{fancyhdr,lastpage}
 \pagestyle{fancy}
@@ -114,7 +122,6 @@ size=8mm}}
 }
 % md addition end
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 $if(title)$
 \title{$title$$if(thanks)$\thanks{$thanks$}$endif$}
 $endif$
@@ -136,12 +143,18 @@ $if(has-frontmatter)$
 $endif$
 $if(title)$
 \maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% md addition
 $if(abstract)$
 \vfill{}
 \begin{abstract}
   \textbf{Abstract:} $abstract$
 \end{abstract}
 $endif$
+% md addition end
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 $endif$
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -194,6 +207,9 @@ $body$
 $if(has-frontmatter)$
 \backmatter
 $endif$
+$if(nocite-ids)$
+\nocite{$for(nocite-ids)$$it$$sep$, $endfor$}
+$endif$
 $if(natbib)$
 $if(bibliography)$
 $if(biblio-title)$
@@ -216,7 +232,3 @@ $include-after$
 
 $endfor$
 \end{document}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% md 21.2.2025
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
