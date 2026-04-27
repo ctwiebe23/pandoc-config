@@ -98,6 +98,7 @@ $hypersetup.latex()$
 \newcommand{\ufrac}[2]{\u{\frac{#1}{#2}}}
 \newcommand{\del}{\nabla}
 \newcommand{\rtt}{\mathrm{RTT}}
+\newcommand{\mrm}{\mathrm}
 %
 % \AtBeginEnvironment{alignat}{\setcounter{equation}{-1}}
 %
