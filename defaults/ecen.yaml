@@ -1,9 +1,9 @@
 # input-file: report.md
 output-file: out.pdf
 standalone: true
-listings: true
+# listings: true
 
-highlight-style: tango
+# highlight-style: tango
 
 metadata:
   author: Carston Wiebe
@@ -28,3 +28,18 @@ metadata:
 
   header:
     right: university of nebraska–lincoln
+
+  # pandoc-crossref
+  codeBlockCaptions: true
+  figPrefix:
+    - "Figure"
+    - "Figures"
+  tblPrefix:
+    - "Table"
+    - "Tables"
+  eqnPrefix:
+    - "Equation"
+    - "Equations"
+  lstPrefix:
+    - "Listing"
+    - "Listings"
