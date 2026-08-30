@@ -1,0 +1,41 @@
+output-file: out.pdf
+standalone: true
+
+metadata:
+  author: Carston Wiebe
+
+  # documentclass: scrartcl
+
+  toc-on-own-page: false
+
+  numbersections: true
+  indent: false
+  colorlinks: false
+  toc: true
+
+  # fontsize: 10pt
+  # linestretch: 1.3
+  # fontfamily: palatino
+
+  margin-left: 1.5in
+  margin-right: 1.5in
+  margin-top: 1in
+  margin-bottom: 1.2in
+
+  header:
+    right: university of nebraska–lincoln
+
+  # pandoc-crossref
+  codeBlockCaptions: true
+  figPrefix:
+    - "Figure"
+    - "Figures"
+  tblPrefix:
+    - "Table"
+    - "Tables"
+  eqnPrefix:
+    - "Equation"
+    - "Equations"
+  lstPrefix:
+    - "Listing"
+    - "Listings"
